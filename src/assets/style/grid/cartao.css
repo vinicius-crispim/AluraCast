@@ -1,0 +1,35 @@
+.secao__titulo{
+    margin: 1rem 0;
+}
+.cartao{
+    display: grid;
+    width: auto;
+    grid-column-gap: .5rem;
+    grid-template-areas: 
+    "imagem titulo botao"
+    "imagem subtitulo botao"
+    "imagem player botao";
+    grid-template-columns: auto 1fr auto;
+    margin: .75rem 0;
+    padding: .4rem 0.5rem;
+}
+
+.cartao__imagem{
+    grid-area: imagem;
+}
+
+.cartao__titulo{
+    grid-area: titulo;
+}
+
+.cartao__subtitulo{
+    grid-area: subtitulo;
+}
+
+.cartao__player{
+    grid-area: player;
+}
+
+.cartao__botao{
+    grid-area: botao;
+}
