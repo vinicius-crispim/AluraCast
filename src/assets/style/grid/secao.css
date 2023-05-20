@@ -8,19 +8,17 @@
 }
 
 .secao-horizontal .secao__cartoes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:start;
-
-}
-
-.secao-horizontal .secao__cartoes .cartao{
-    margin-right: .5rem;
-    width:calc(33% - .5rem)
-}
-
-.secao-horizontal .secao__cartoes .cartao__titulo{
-    align-self: end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(348px, 100%/3)),1fr))
+    /* minmax é uma função que recebe o intervalo entre dois valores (mínimo e máximo)
+    cada mínimo e máximo pode ter o seu mínimo e máximo também.
+    Nos parênteses amarelos, eles possuem seu min (100%/2) e max(348px, 100/3),
+    o 100%/2 pega a largura total do grid container e divide por 2, cada grid item fica com 50%,
+    o valor máximo tambem possui o mínimo e máximo, o min é 348px e o max é 100%/3, o valor máximo
+    só entra em vigor quando tem condições para seu parametro mínimo acontecer, portanto 100%/3 somente
+    quando tiver espaço para cada coluna ter 348px, enquanto nao tiver espaço 100%/2.
+    De uma forma mais macro, nos parênteses azuis, que tambem possui o seu min e max, o mínimo é toda lógica
+    dos parênteses amarelos, e o máximo é 1fr, para fazer com que todos os grid items tenham no maximo 1fr */
 }
 
 .secao-vertical{
