@@ -1,0 +1,11 @@
+.menu-lateral{
+    display:grid;
+    grid-template-rows: repeat(3,auto) 1fr;
+    row-gap: 2rem;
+}
+
+.menu-lateral__logo{
+    /* Justify alinha horizontalmente, align alinha verticalmente */
+    /* self para alinha somente este item */
+    justify-self: center;
+}

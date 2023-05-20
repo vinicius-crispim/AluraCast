@@ -1,0 +1,35 @@
+.secao{
+    display: grid;
+    align-items: center;
+}
+
+.secao-horizontal {
+    grid-template-rows: 120px auto;
+}
+
+.secao-horizontal .secao__cartoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+
+}
+
+.secao-horizontal .secao__cartoes .cartao{
+    margin-right: .5rem;
+    width:calc(33% - .5rem)
+}
+
+.secao-horizontal .secao__cartoes .cartao__titulo{
+    align-self: end;
+}
+
+.secao-vertical{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* Define a altura de cada linha */
+    grid-template-rows: 1fr 2fr;
+}
+
+.secao-vertical .secao__cartoes{
+    grid-column: 1/3;
+}
