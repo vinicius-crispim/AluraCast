@@ -29,6 +29,7 @@ button {
 }
 
 body {
+    margin: 0 0 1.5rem 0;
     color: var(--cor-textos);
     background: var(--azul-degrade);
     font-family: var(--fonte-textos);

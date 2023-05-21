@@ -8,7 +8,7 @@
     display: grid;
     gap: .3rem;
     grid-template-columns: auto 1fr auto;
-    margin: .3rem 0;
+    margin: .3rem .3rem 0 0;
 }
 
 .secao-horizontal .cartao__imagem{
@@ -17,8 +17,9 @@
 .secao-horizontal .cartao__botao{
     grid-area: 1/3/4/4;
 }
-/* 
-.secao-horizontal .secao__cartoes .cartao{
-    margin-right: .5rem;
-    width:calc(33% - .5rem)
-} */
+
+.secao-vertical .cartao{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0 .5rem 0 0;    
+}
