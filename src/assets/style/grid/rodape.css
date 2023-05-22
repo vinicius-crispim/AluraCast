@@ -1,0 +1,62 @@
+.rodape{
+    height:auto;
+    display: grid;
+    grid-template-columns: auto 2fr auto 1.5fr repeat(3, auto) 1.5fr auto 1.5fr 1fr auto;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    gap: .5rem;
+}
+
+.rodape__imagem{
+    grid-area: 1/1/3/2;
+}
+
+.rodape__titulo{
+    grid-area: 1/2/2/3;
+}
+
+.rodape__subtitulo{
+    grid-area: 2/2/3/3;
+}
+
+.rodape__botao--voltar{
+    grid-area: 1/4/2/5;
+    justify-self: end;
+}
+
+.rodape__botao--anterior{
+    grid-area: 1/5/2/6;
+}
+
+.rodape__botao--play{
+    grid-area: 1/6/2/7;
+}
+
+.rodape__botao--proximo{
+    grid-area: 1/7/2/8;
+}
+
+.rodape__botao--avancar{
+    grid-area: 1/8/2/9;
+    justify-self: start;
+}
+
+.rodape__horario--inicio{
+    grid-area: 2/3/3/4;
+}
+
+.rodape__horario--termino{
+    grid-area: 2/9/3/10;
+}
+
+.barra__container--reproducao{
+    grid-area: 2/4/3/9;
+}
+
+.barra__container--volume{
+    grid-area: 2/11/3/12;
+}
+
+.rodape__botao--volume-up{
+    grid-area: 2/12/3/13;
+}
